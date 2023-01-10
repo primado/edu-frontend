@@ -31,8 +31,9 @@ module.exports = {
       'lg': { max: '1023px' },
       'md': { max: '767px' },
       'sm': { max: '639px' },
-      'sm-425': {max: '425px'},
-      'sm-375': {max: '375px'},
+      'sm-460': {max: '460px'},
+      'sm-425': {max: '430px'},
+      'sm-375': {max: '380px'},
       
     },
 

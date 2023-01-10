@@ -2801,12 +2801,22 @@ select {
     width: 100%;
   }
 
+  .sm\:w-\[30em\] {
+    width: 30em;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 460px) {
+  .sm-460\:w-screen {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 430px) {
   .sm-425\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -2827,5 +2837,16 @@ select {
   .sm-425\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .sm-375\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .sm-375\:text-\[\.8em\] {
+    font-size: .8em;
   }
 }
