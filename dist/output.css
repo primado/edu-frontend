@@ -930,9 +930,8 @@ select {
   clear: none;
 }
 
-.my-28 {
-  margin-top: 7rem;
-  margin-bottom: 7rem;
+.m-20 {
+  margin: 5rem;
 }
 
 .my-10 {
@@ -948,6 +947,20 @@ select {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mb-5 {
@@ -2269,14 +2282,14 @@ select {
   line-height: 2.25rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-4xl {
@@ -2752,18 +2765,6 @@ select {
 
 .hover\:duration-200:hover {
   transition-duration: 200ms;
-}
-
-.hover\:duration-150:hover {
-  transition-duration: 150ms;
-}
-
-.hover\:duration-300:hover {
-  transition-duration: 300ms;
-}
-
-.hover\:duration-100:hover {
-  transition-duration: 100ms;
 }
 
 .hover\:duration-500:hover {
