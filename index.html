@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&family=Roboto+Slab:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="dist/output.css">
+    <title>Login Page</title>
+</head>
+<body class="bg-bg-body flex justify-center items-center sm-425:flex">
+
+    <main>
+        <section class="my-28 font-auth_font w-[40em] sm-425:w-screen sm-425:h-screen sm-425:my-0">
+            <div class="container bg-[#fff] px-16 py-10">
+                <div class="brand-logo font-semibold text-xl">
+                    <h1>Edu</h1>
+                </div>
+                <div class="heading--login my-10 ">
+                    <h2 class="font-semibold text-3xl pb-3 sm-425:text-2xl">Login</h2>
+                    <p class="text-text-gray font-medium text-sm">Welcome back! Please enter your details.</p>
+
+                </div>
+                <div class="form--login ">
+                    <form action="#">
+                        <div class="form__group flex flex-col mb-3">
+                            <label class="font-semibold text-base" for="email">Email</label>
+                            <input class="form-input font-inter-font font-medium text-base" type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form__group flex flex-col mb-3">
+                            <label class="font-semibold text-base" for="password">Password</label>
+                            <input class="form-input font-inter-font font-medium text-base" type="password" name="password" id="password" placeholder="Enter your password">
+                        </div>
+
+                        <div class="form__group flex flex-row justify-between ">
+                            <div class="remember-me-left">
+                                <input class="form-checkbox" type="checkbox" name="remember" id="remember">
+                                <label class="font-semibold text-base text-text-gray" for="remember">Remember me</label>
+                            </div>
+                            <div>
+                                <a href="#" class="forgot-password font-semibold text-base text-primary-100 hover:text-link-hover active:text-link-ative hover:">Forgot password?</a>
+                            </div>
+                        </div>  
+                        <div class="form__group flex flex-row my-5">
+                            <input class="bg-primary-100 font-medium text-xl py-2  text-[#fff] w-[25.5em] rounded-lg hover:bg-link-hover active:bg-link-active hover:ease-out active:ease-out hover:duration-200 active:duration-150" type="submit" value="Sign In">
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
