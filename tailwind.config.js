@@ -13,6 +13,8 @@ module.exports = {
       "link-ative": "#FB8500",
       'link-hover': "#3e44fe",
       "link-active": "#2b2fb1",
+      'text-grey-100': '#3d4551',
+      'black': '#000000',
     },
 
     fontFamily: {

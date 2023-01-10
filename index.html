@@ -19,12 +19,12 @@
                 </div>
                 <div class="heading--login my-10 ">
                     <h2 class="font-semibold text-3xl pb-3 sm-425:text-2xl">Login</h2>
-                    <p class="text-text-gray font-medium text-sm">Welcome back! Please enter your details.</p>
+                    <p class="text-text-gray font-medium sm-425:text-sm">Welcome back! Please enter your details.</p>
 
                 </div>
                 <div class="form--login ">
                     <form action="#">
-                        <div class="form__group flex flex-col mb-3">
+                        <div class="form__group flex flex-col mb-5">
                             <label class="font-semibold text-base" for="email">Email</label>
                             <input class="form-input font-inter-font font-medium text-base" type="email" name="email" id="email" placeholder="Enter your email">
                         </div>
@@ -33,7 +33,7 @@
                             <input class="form-input font-inter-font font-medium text-base" type="password" name="password" id="password" placeholder="Enter your password">
                         </div>
 
-                        <div class="form__group flex flex-row justify-between ">
+                        <div class="form__group flex flex-row justify-between mt-5">
                             <div class="remember-me-left">
                                 <input class="form-checkbox" type="checkbox" name="remember" id="remember">
                                 <label class="font-semibold text-base text-text-gray sm-375:text-[.8em]" for="remember">Remember me</label>
@@ -42,9 +42,19 @@
                                 <a href="#" class="forgot-password font-semibold text-base text-primary-100 sm-375:text-[.8em] hover:text-link-hover active:text-link-ative hover:duration-200 hover:ease-out active:duration-150">Forgot password?</a>
                             </div>
                         </div>  
-                        <div class="form__group flex flex-row my-5">
-                            <input class="bg-primary-100 font-medium text-xl py-2  text-[#fff] w-[25.5em] rounded-lg hover:bg-link-hover active:bg-link-active hover:ease-out active:ease-out hover:duration-200 active:duration-150" type="submit" value="Sign In">
+                        <div class="form__group flex flex-row my-5 mb-5">
+                            <input class="bg-primary-100 font-medium text-xl py-2  text-[#fff] w-[25.5em] rounded-lg hover:bg-link-hover active:bg-link-active hover:ease-out active:ease-out hover:duration-500 active:duration-150" type="submit" value="Sign In">
                         </div>
+
+                        <div class="form__group flex flex-row mb-3">
+                            <a class="flex flex-row justify-center py-1 items-center w-full font-bold  border-text-gray border-2 rounded-lg text-text-grey-100 hover:text-[#fff] hover:bg-black hover:ease-in-out hover:duration-500" href="#">
+                            <img class="w-10 mr-2" src="./images/icon-google.svg" alt="google">Sign in With Google</a>
+                        </div>
+
+                        <div class="form__group flex flex-row justify-center items-center">
+                            <p class="text-text-gray font-medium text-sm">Don't have an account? <a href="#" class="font-semibold text-base text-primary-100 hover:text-link-hover active:text-link-ative hover:duration-200 hover:ease-out active:duration-150">Sign Up</a></p>
+                        </div>
+
                     </form>
 
                 </div>
