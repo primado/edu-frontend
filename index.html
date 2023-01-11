@@ -1,67 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&family=Roboto+Slab:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&family=Roboto+Slab:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="dist/output.css" />
     <title>Login Page</title>
-</head>
-<body class="bg-bg-body flex flex-row justify-center items-center sm-425:flex">
-
+  </head>
+  <body
+    class="bg-bg-body flex flex-row justify-center items-center sm-425:flex"
+  >
     <main>
-        <section class="my-16 font-auth_font w-10/12 sm-425:w-screen sm-425:my-0 sm-460:w-screen sm:w-[30em]">
-            <div class="container bg-[#fff] px-16 py-10 rounded-lg  sm-375:px-10 sm-425:h-full sm-320:h-full sm-320:py-16 sm-375:h-full sm-375:py-16 sm-360:h-screen">
-                <div class="brand-logo font-semibold text-xl">
-                    <h1>Edu</h1>
+      <section
+        class="my-16 font-auth_font w-10/12 sm-425:w-screen sm-425:my-0 sm-460:w-screen sm:w-[30em]"
+      >
+        <div
+          class="container bg-[#fff] px-16 py-10 rounded-lg sm-375:px-10 sm-425:h-full sm-320:h-full sm-320:py-16 sm-375:h-full sm-375:py-16 sm-360:h-screen"
+        >
+          <div class="brand-logo font-semibold text-xl">
+            <h1>Edu</h1>
+          </div>
+          <div class="heading--login my-10">
+            <h2 class="font-semibold text-3xl pb-3 sm-425:text-2xl">Login</h2>
+            <p class="text-text-gray font-medium sm-425:text-sm">
+              Welcome back! Please enter your details.
+            </p>
+          </div>
+          <div class="form--login">
+            <form id="login-form" action="#">
+              <div class="form__group flex flex-col mb-5">
+                <label class="font-semibold text-base" for="email">Email</label>
+                <input
+                  class="form-input font-inter-font font-medium text-base rounded-lg"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+                <small id="email-error" class="text-bg-pink mt-1.5"></small>
+              </div>
+              <div class="form__group flex flex-col mb-3">
+                <label class="font-semibold text-base" for="password"
+                  >Password</label
+                >
+                <input
+                  class="form-input font-inter-font font-medium text-base rounded-lg"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter your password"
+                />
+                <small id="password-error" class="text-bg-pink mt-1.5"></small>
+              </div>
+
+              <div class="form__group flex flex-row justify-between mt-5">
+                <div class="remember-me-left">
+                  <input
+                    class="form-checkbox"
+                    type="checkbox"
+                    name="remember"
+                    id="remember"
+                  />
+                  <label
+                    class="font-semibold text-base text-text-gray sm-375:text-[.8em]"
+                    for="remember"
+                    >Remember me</label
+                  >
                 </div>
-                <div class="heading--login my-10 ">
-                    <h2 class="font-semibold text-3xl pb-3 sm-425:text-2xl">Login</h2>
-                    <p class="text-text-gray font-medium sm-425:text-sm">Welcome back! Please enter your details.</p>
-
+                <div>
+                  <a
+                    href="./templates/forgot_password.html"
+                    class="forgot-password py-2 font-semibold text-base text-primary-100 sm-375:text-[.8em] hover:text-link-hover active:text-link-ative hover:duration-200 hover:ease-out active:duration-150"
+                    >Forgot password?</a
+                  >
                 </div>
-                <div class="form--login ">
-                    <form action="#">
-                        <div class="form__group flex flex-col mb-5">
-                            <label class="font-semibold text-base" for="email">Email</label>
-                            <input class="form-input font-inter-font font-medium text-base rounded-lg" type="email" name="email" id="email" placeholder="Enter your email">
-                        </div>
-                        <div class="form__group flex flex-col mb-3">
-                            <label class="font-semibold text-base" for="password">Password</label>
-                            <input class="form-input font-inter-font font-medium text-base rounded-lg" type="password" name="password" id="password" placeholder="Enter your password">
-                        </div>
+              </div>
+              <div class="form__group flex flex-row my-5 mb-5">
+                <input
+                  class="bg-primary-100 font-medium text-xl py-2 text-[#fff] w-[25.5em] rounded-lg hover:bg-link-hover active:bg-link-active hover:ease-out active:ease-out hover:duration-500 active:duration-150"
+                  type="submit"
+                  value="Sign In"
+                />
+              </div>
 
-                        <div class="form__group flex flex-row justify-between mt-5">
-                            <div class="remember-me-left">
-                                <input class="form-checkbox" type="checkbox" name="remember" id="remember">
-                                <label class="font-semibold text-base text-text-gray sm-375:text-[.8em]" for="remember">Remember me</label>
-                            </div>
-                            <div>
-                                <a href="./templates/forgot_password.html" class="forgot-password py-2 font-semibold text-base text-primary-100 sm-375:text-[.8em] hover:text-link-hover active:text-link-ative hover:duration-200 hover:ease-out active:duration-150">Forgot password?</a>
-                            </div>
-                        </div>  
-                        <div class="form__group flex flex-row my-5 mb-5">
-                            <input class="bg-primary-100 font-medium text-xl py-2  text-[#fff] w-[25.5em] rounded-lg hover:bg-link-hover active:bg-link-active hover:ease-out active:ease-out hover:duration-500 active:duration-150" type="submit" value="Sign In">
-                        </div>
+              <div class="form__group flex flex-row mb-3">
+                <a
+                  class="flex flex-row justify-center py-1 items-center w-full font-bold border-text-gray border-2 rounded-lg text-text-grey-100 hover:text-[#fff] hover:bg-black hover:ease-in-out hover:duration-500"
+                  href="#"
+                >
+                  <img
+                    class="w-10 mr-2"
+                    src="./images/icon-google.svg"
+                    alt="google"
+                  />Sign in With Google</a
+                >
+              </div>
 
-                        <div class="form__group flex flex-row mb-3">
-                            <a class="flex flex-row justify-center py-1 items-center w-full font-bold  border-text-gray border-2 rounded-lg text-text-grey-100 hover:text-[#fff] hover:bg-black hover:ease-in-out hover:duration-500" href="#">
-                            <img class="w-10 mr-2" src="./images/icon-google.svg" alt="google">Sign in With Google</a>
-                        </div>
-
-                        <div class="form__group flex flex-row justify-center items-center">
-                            <p class="text-text-gray font-medium text-sm">Don't have an account? <a href="./templates/registration.html" class="font-semibold text-base text-primary-100 hover:text-link-hover active:text-link-ative hover:duration-200 hover:ease-out active:duration-150">Sign Up</a></p>
-                        </div>
-
-                    </form>
-
-                </div>
-
-            </div>
-        </section>
+              <div
+                class="form__group flex flex-row justify-center items-center"
+              >
+                <p class="text-text-gray font-medium text-sm">
+                  Don't have an account?
+                  <a
+                    href="./templates/registration.html"
+                    class="font-semibold text-base text-primary-100 hover:text-link-hover active:text-link-ative hover:duration-200 hover:ease-out active:duration-150"
+                    >Sign Up</a
+                  >
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    
-</body>
+
+    <!-- scripts -->
+    <script type="module">
+      import { checkField, handleLogin } from "./src/scripts/form-handlers.js";
+
+      const loginForm = document.querySelector("#login-form");
+
+      const formData = new FormData(loginForm);
+      const formFields = Object.keys(Object.fromEntries(formData.entries())); 
+
+      loginForm.addEventListener("submit", handleLogin);
+
+      formFields.forEach((field) => {
+        const input = loginForm.querySelector(`#${field}`);
+        input.addEventListener("blur", () => checkField(field, loginForm));
+      });
+    </script>
+  </body>
 </html>
