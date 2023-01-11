@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="../dist/output.css">
     <title>Register an Account</title>
 </head>
-<body class="bg-bg-body">
+<body class="bg-bg-body flex justify-center items-center">
 
-    <section class="bg-[#fff] font-auth_font">
-        <div class="container px-16 py-10">
+    <section class="bg-[#fff] font-auth_font w-1/3 my-16 laptop:w-3/5 sm-425:w-screen sm-425:h-screen sm-425:my-0 sm-412:h-screen sm-360:w-screen sm-360:h-full sm-375:h-full">
+        <div class="container px-16 py-10 sm-320:px-8 sm-412:px-12 sm-360:px-8">
             <div class="brand py-5">
                 <h1 class="font-semibold text text-xl">Edu</h1>
             </div>
             <div class="form">
                 <h2 class="font-extrabold text-2xl py-5">Register an Account</h2>
                 <form action="#" method="POST">
-                    <div class="form__group flex flex-row gap-10 mb-5">
+                    <div class="form__group flex flex-col gap-2 mb-3">
                         <div class="form__name flex flex-col">
                             <label class="font-bold text-base" for="fname">First Name</label>
                             <input class="form-input font-inter-font font-medium text-base rounded-lg" type="text" name="name" id="name" placeholder="Enter your first name">
@@ -29,33 +29,33 @@
                             <input class="form-input font-inter-font font-medium text-base rounded-lg" type="text" name="name" id="name" placeholder="Enter your last name">
                         </div>
                     </div>
-                    <div class="form__group flex flex-col mb-5">
+                    <div class="form__group flex flex-col mb-3">
                         <label class="font-bold text-base" for="email">Email</label>
-                        <input class="form-input font-inter-font font-medium text-base rounded-lg w-11/12" type="email" name="email" id="email" placeholder="Enter your email">
+                        <input class="form-input font-inter-font font-medium text-base rounded-lg w-" type="email" name="email" id="email" placeholder="Enter your email">
                     </div>
-                    <div class="form__group flex flex-col mb-5">
+                    <div class="form__group flex flex-col mb-3">
                         <label class="font-bold text-base" for="phone">Phone</label>
-                        <input class="form-input font-inter-font font-medium text-base rounded-lg w-11/12" type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                        <input class="form-input font-inter-font font-medium text-base rounded-lg" type="tel" name="phone" id="phone" placeholder="Enter your phone number">
                     </div>
-                    <div class="form_group flex flex-col mb-5">
+                    <div class="form_group flex flex-col mb-3">
                         <label class="font-bold text-base"  for="password">Password</label>
-                        <input class="form-input font-inter-font font-medium text-base rounded-lg w-11/12" type="password" name="password" id="password" placeholder="Enter your password">
+                        <input class="form-input font-inter-font font-medium text-base rounded-lg" type="password" name="password" id="password" placeholder="Enter your password">
                     </div>
                     <div class="form__group flex flex-col mb-5">
                         <label class="font-bold text-base" for="confirm_password">Confirm Password</label>
-                        <input class="form-input font-inter-font font-medium text-base rounded-lg w-11/12" type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password">
+                        <input class="form-input font-inter-font font-medium text-base rounded-lg" type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password">
                     </div>
                     <div class="form__group flex flex-row">
-                        <input class="form-input " type="submit" value="Sign Up" name="register">
+                        <input class="form-input w-full bg-black-indigo text-[#fff] font-semibold text-xl rounded-lg sm-320:font-semibold sm-320:text-base hover:bg-light-blue hover:text-[#000] hover:border-[#000] hover:border-2" type="submit" value="Create account" name="register">
                     </div>
-                    <div class="form__group">
-                        <a href="#">
-                        <img src="../images/icon-google.svg" alt="">
+                    <div class="form__group mt-3">
+                        <a class="flex flex-row justify-center items-center font-semibold text-xl rounded-lg py-1 text-[#000] border-2 border-blue-grey sm-320:font-semibold sm-320:text-base hover:bg-bg-light-grey/70 hover:text-[#000] hover:ease-linear hover:duration-200" href="#">
+                        <img class="w-10 mr-2 sm-320:w-5" src="../images/icon-google.svg" alt="">
                         Sign up with Google
                         </a>
                     </div>
-                    <div class="form__group">
-                        <p>Already have an account? <a href="login.html">Login</a></p>
+                    <div class="form__group flex justify-center items-center mt-2">
+                        <p class="text-text-gray font-medium text-sm">Already have an account? <a class="font-semibold text-base text-primary-100 hover:text-link-hover active:text-link-ative hover:duration-200 hover:ease-out active:duration-150" href="index.html">Login</a></p>
                     </div>
                 </form>
         </div>

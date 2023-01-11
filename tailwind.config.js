@@ -16,6 +16,11 @@ module.exports = {
       "link-active": "#2b2fb1",
       'text-grey-100': '#3d4551',
       'black': '#000000',
+      'black-indigo': '#111727',
+      'light-blue': '#8ECAE6',
+      'blue-grey': '#42454e',
+      "bg-light-grey": '#e5e5e5',
+      'bg-pink': '#fb6f92'
     },
 
     fontFamily: {
@@ -32,11 +37,16 @@ module.exports = {
       '2xl': { max: '1535px' },
       'xl': { max: '1279px' },
       'lg': { max: '1023px' },
+      'laptop': {max: '1024px'},
       'md': { max: '767px' },
       'sm': { max: '639px' },
       'sm-460': {max: '460px'},
       'sm-425': {max: '430px'},
+      'sm-425-2': {max: '425px'},
+      'sm-412': {max: '417px'},
       'sm-375': {max: '380px'},
+      'sm-360': {max: '365px'},
+      'sm-320': {max: '325px'},
       
     },
 
