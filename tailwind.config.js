@@ -20,7 +20,10 @@ module.exports = {
       'light-blue': '#8ECAE6',
       'blue-grey': '#42454e',
       "bg-light-grey": '#e5e5e5',
-      'bg-pink': '#fb6f92'
+      'bg-pink': '#fb6f92',
+      'bg-lavender': '#7e55da',
+      'bg-lavender-100': '#9d63ff',
+      'shadow-bg': '5px 6px 30px -3px rgba(112,106,112,1)'
     },
 
     fontFamily: {
