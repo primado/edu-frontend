@@ -1110,6 +1110,22 @@ select {
   width: 33.333333%;
 }
 
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-6\/12 {
+  width: 50%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
 .max-w-xl {
   max-width: 36rem;
 }
@@ -2788,6 +2804,15 @@ select {
 
 .hover\:bg-bg-light-grey\/70:hover {
   background-color: rgb(229 229 229 / 0.7);
+}
+
+.hover\:bg-\[\]:hover {
+  background-color: ;
+}
+
+.hover\:bg-\[\#fff\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover {
