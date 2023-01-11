@@ -2218,6 +2218,11 @@ select {
   padding-bottom: 2.5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -3028,16 +3033,6 @@ select {
     width: 100vw;
   }
 
-  .sm-425\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .sm-425\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .sm-425\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -3065,18 +3060,9 @@ select {
     height: 100%;
   }
 
-  .sm-375\:h-screen {
-    height: 100vh;
-  }
-
   .sm-375\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .sm-375\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
   }
 
   .sm-375\:py-16 {
@@ -3090,12 +3076,12 @@ select {
 }
 
 @media (max-width: 365px) {
-  .sm-360\:h-full {
-    height: 100%;
-  }
-
   .sm-360\:h-screen {
     height: 100vh;
+  }
+
+  .sm-360\:h-full {
+    height: 100%;
   }
 
   .sm-360\:w-screen {
@@ -3109,10 +3095,6 @@ select {
 }
 
 @media (max-width: 325px) {
-  .sm-320\:h-screen {
-    height: 100vh;
-  }
-
   .sm-320\:h-full {
     height: 100%;
   }
@@ -3121,29 +3103,14 @@ select {
     width: 1.25rem;
   }
 
-  .sm-320\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .sm-320\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
   .sm-320\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 
-  .sm-320\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .sm-320\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+  .sm-320\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .sm-320\:text-lg {
@@ -3151,9 +3118,14 @@ select {
     line-height: 1.75rem;
   }
 
-  .sm-320\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .sm-320\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm-320\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .sm-320\:font-semibold {
