@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800&family=Roboto+Slab:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Register an Account</title>
+</head>
+<body class="bg-bg-body">
+
+    <section class="bg-[#fff] font-auth_font">
+        <div class="container px-16 py-10">
+            <div class="brand py-5">
+                <h1 class="font-semibold text text-xl">Edu</h1>
+            </div>
+            <div class="form">
+                <h2 class="font-extrabold text-2xl py-5">Register an Account</h2>
+                <form action="#" method="POST">
+                    <div class="form__group flex flex-row gap-10 mb-5">
+                        <div class="form__name flex flex-col">
+                            <label class="font-bold text-base" for="fname">First Name</label>
+                            <input class="form-input font-inter-font font-medium text-base rounded-lg" type="text" name="name" id="name" placeholder="Enter your first name">
+                        </div>
+                        <div class="form__name flex flex-col">
+                            <label class="font-bold text-base" for="lname">Last Name</label>
+                            <input class="form-input font-inter-font font-medium text-base rounded-lg" type="text" name="name" id="name" placeholder="Enter your last name">
+                        </div>
+                    </div>
+                    <div class="form__group flex flex-col mb-5">
+                        <label class="font-bold text-base" for="email">Email</label>
+                        <input class="form-input font-inter-font font-medium text-base rounded-lg w-11/12" type="email" name="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form__group flex flex-col mb-5">
+                        <label class="font-bold text-base" for="phone">Phone</label>
+                        <input class="form-input font-inter-font font-medium text-base rounded-lg w-11/12" type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form_group flex flex-col mb-5">
+                        <label class="font-bold text-base"  for="password">Password</label>
+                        <input class="form-input font-inter-font font-medium text-base rounded-lg w-11/12" type="password" name="password" id="password" placeholder="Enter your password">
+                    </div>
+                    <div class="form__group flex flex-col mb-5">
+                        <label class="font-bold text-base" for="confirm_password">Confirm Password</label>
+                        <input class="form-input font-inter-font font-medium text-base rounded-lg w-11/12" type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password">
+                    </div>
+                    <div class="form__group flex flex-row">
+                        <input class="form-input " type="submit" value="Sign Up" name="register">
+                    </div>
+                    <div class="form__group">
+                        <a href="#">
+                        <img src="../images/icon-google.svg" alt="">
+                        Sign up with Google
+                        </a>
+                    </div>
+                    <div class="form__group">
+                        <p>Already have an account? <a href="login.html">Login</a></p>
+                    </div>
+                </form>
+        </div>
+    </section>
+
+    
+</body>
+</html>
