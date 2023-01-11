@@ -2787,6 +2787,11 @@ select {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.hover\:border-\[\#fff\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .hover\:bg-link-hover:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(62 68 254 / var(--tw-bg-opacity));
@@ -2813,6 +2818,11 @@ select {
 .hover\:bg-\[\#fff\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primary-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 56 205 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover {
