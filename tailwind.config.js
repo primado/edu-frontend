@@ -41,15 +41,20 @@ module.exports = {
       'xl': { max: '1279px' },
       'lg': { max: '1023px' },
       'laptop': {max: '1024px'},
+      'sm-912': {max: '917px'},
       'md': { max: '767px' },
       'sm': { max: '639px' },
+      'sm-540': {max: '540px'},
       'sm-460': {max: '460px'},
       'sm-425': {max: '430px'},
       'sm-425-2': {max: '425px'},
       'sm-412': {max: '417px'},
+      'sm-390': {max: '395px'},
       'sm-375': {max: '380px'},
       'sm-360': {max: '365px'},
       'sm-320': {max: '325px'},
+      'sm-280': {max: '285px'},
+      
       
     },
 
