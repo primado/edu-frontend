@@ -18,32 +18,38 @@
             </div>
             <div class="form">
                 <h2 class="font-extrabold text-2xl py-5">Register an Account</h2>
-                <form action="#" method="POST">
+                <form id="signup-form" action="#" method="POST">
                     <div class="form__group flex flex-col gap-2 mb-3">
                         <div class="form__name flex flex-col">
-                            <label class="font-bold text-base" for="fname">First Name</label>
-                            <input class="form-input font-inter-font font-medium text-base rounded-lg" type="text" name="name" id="name" placeholder="Enter your first name">
+                            <label class="font-bold text-base" for="firstName">First Name</label>
+                            <input class="form-input font-inter-font font-medium text-base rounded-lg" type="text" name="firstName" id="firstName" placeholder="Enter your first name">
+                            <small id="firstName-error" class="text-bg-pink mt-1.5"></small>
                         </div>
                         <div class="form__name flex flex-col">
-                            <label class="font-bold text-base" for="lname">Last Name</label>
-                            <input class="form-input font-inter-font font-medium text-base rounded-lg" type="text" name="name" id="name" placeholder="Enter your last name">
+                            <label class="font-bold text-base" for="lastName">Last Name</label>
+                            <input class="form-input font-inter-font font-medium text-base rounded-lg" type="text" name="lastName" id="lastName" placeholder="Enter your last name">
+                            <small id="lastName-error" class="text-bg-pink mt-1.5"></small>
                         </div>
                     </div>
                     <div class="form__group flex flex-col mb-3">
                         <label class="font-bold text-base" for="email">Email</label>
                         <input class="form-input font-inter-font font-medium text-base rounded-lg w-" type="email" name="email" id="email" placeholder="Enter your email">
+                        <small id="email-error" class="text-bg-pink mt-1.5"></small>
                     </div>
                     <div class="form__group flex flex-col mb-3">
                         <label class="font-bold text-base" for="phone">Phone</label>
                         <input class="form-input font-inter-font font-medium text-base rounded-lg" type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                        <small id="phone-error" class="text-bg-pink mt-1.5"></small>
                     </div>
                     <div class="form_group flex flex-col mb-3">
                         <label class="font-bold text-base"  for="password">Password</label>
                         <input class="form-input font-inter-font font-medium text-base rounded-lg" type="password" name="password" id="password" placeholder="Enter your password">
+                        <small id="password-error" class="text-bg-pink mt-1.5"></small>
                     </div>
                     <div class="form__group flex flex-col mb-5">
                         <label class="font-bold text-base" for="confirm_password">Confirm Password</label>
-                        <input class="form-input font-inter-font font-medium text-base rounded-lg" type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password">
+                        <input class="form-input font-inter-font font-medium text-base rounded-lg" type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm your password">
+                        <small id="confirmPassword-error" class="text-bg-pink mt-1.5"></small>
                     </div>
                     <div class="form__group flex flex-row">
                         <input class="form-input w-full bg-black-indigo text-[#fff] font-semibold text-xl rounded-lg sm-320:font-semibold sm-320:text-base hover:text-black hover:bg-[#fff] border-[#fff]  hover:border-black-indigo hover:border-2 hover:ease-in-out hover:duration-200" type="submit" value="Create account" name="register">
@@ -61,6 +67,28 @@
         </div>
     </section>
 
-    
+    <!-- scripts -->
+    <script type="module">
+        import {
+          checkField,
+          handleSignup,
+        } from "../src/scripts/form-handlers.js";
+  
+        const signupForm = document.querySelector(
+          "#signup-form"
+        );
+  
+        const formData = new FormData(signupForm);
+        const formFields = Object.keys(Object.fromEntries(formData.entries()));
+  
+        signupForm.addEventListener("submit", handleSignup);
+  
+        formFields.forEach((field) => {
+          const input = signupForm.querySelector(`#${field}`);
+          input.addEventListener("blur", () =>
+            checkField(field, signupForm)
+          );
+        });
+      </script>
 </body>
 </html>
